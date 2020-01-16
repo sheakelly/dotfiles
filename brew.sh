@@ -23,13 +23,12 @@ brew install fzf
 brew install z
 brew cask install font-hack-nerd-font
 brew cask install iterm2
-# nvm and node
-# pyenv and python
+brew install nvm
+brew install pyenv
 
 # Install other apps
 brew cask install google-chrome
 brew cask install google-chrome-canary
-brew cask install todoist
 brew cask install spotify
 brew cask install slack
 brew install p7zip
