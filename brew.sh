@@ -41,7 +41,7 @@ brew cask install spotify
 brew cask install slack
 brew install p7zip
 
-#Install oh-my-zsh
+# Install oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
