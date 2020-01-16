@@ -22,6 +22,7 @@ brew install ripgrep
 brew install fzf
 brew install z
 brew cask install font-hack-nerd-font
+brew cask install iterm2
 # nvm and node
 # pyenv and python
 
