@@ -9,7 +9,7 @@ brew update
 brew upgrade
 
 # tap some casks
-brew tap caskroom/cask
+brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 
 # Install dev apps and tools
