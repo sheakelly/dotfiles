@@ -26,6 +26,7 @@ brew cask install iterm2
 brew install node
 brew install python3
 brew install nvm
+mkdir ~/.nvm
 brew install pyenv
 
 npm install -g neovim
@@ -34,6 +35,7 @@ npm i -g bash-language-server
 npm install -g vtop
 pip3 install saws # super charged aws cli
 pip3 install neovim
+mkdir ~/.local/share/nvim/backup
 
 # Install other apps
 brew cask install google-chrome
@@ -52,6 +54,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 # Install vim plugins
 nvim +PlugInstall +qall
 nvim +UpdateRemotePlugins +qall
+nvim -c 'CocInstall -sync coc-tsserver coc-tslint coc-json coc-html|q'
 
 # Install vim airline theme
 cp ~/.config/nvim/space.vim ~/.config/nvim/plugged/vim-airline-themes/autoload/airline/themes/space.vim

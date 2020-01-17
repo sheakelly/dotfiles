@@ -74,7 +74,7 @@ Plug 'othree/yajs.vim'
 Plug 'scrooloose/nerdtree'
 
 " Colorscheme
-Plug 'mhartington/oceanic-next'
+Plug 'arcticicestudio/nord-vim'
 
 " Customized vim status line
 Plug 'vim-airline/vim-airline'
@@ -85,7 +85,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'arcticicestudio/nord-vim'
 
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Initialize plugin system
 call plug#end()

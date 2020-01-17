@@ -128,3 +128,13 @@ SPACESHIP_GIT_STATUS_STASHED=''
 # Load nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/slss.zsh
