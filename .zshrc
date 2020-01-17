@@ -124,3 +124,7 @@ prompt spaceship
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_NODE_SHOW=false
 SPACESHIP_GIT_STATUS_STASHED=''
+
+# Load nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

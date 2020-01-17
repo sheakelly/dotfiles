@@ -32,7 +32,8 @@ npm install -g neovim
 npm install -g spaceship-prompt
 npm i -g bash-language-server
 npm install -g vtop
-pip install saws # super charged aws cli
+pip3 install saws # super charged aws cli
+pip3 install neovim
 
 # Install other apps
 brew cask install google-chrome
