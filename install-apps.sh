@@ -39,6 +39,7 @@ brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install spotify
 brew cask install slack
+brew cask install mtmr
 brew install p7zip
 
 # Install oh-my-zsh
@@ -47,3 +48,15 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 fi
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
+# Install vim plugins
+nvim +PlugInstall +qall
+nvim +UpdateRemotePlugins +qall
+
+# Install vim airline theme
+cp ~/.config/nvim/space.vim ~/.config/nvim/plugged/vim-airline-themes/autoload/airline/themes/space.vim
+
+# Install tmux plugin manager
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+fi
