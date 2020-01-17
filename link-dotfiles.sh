@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e # Exit immediately if a command exits with a non-zero status.
 
 INSTALL_DIR=$PWD
 BACKUP_DIR=$INSTALL_DIR/backup
