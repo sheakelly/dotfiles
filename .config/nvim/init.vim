@@ -83,6 +83,10 @@ call denite#custom#var('grep', 'final_opts', [])
 " Remove date from buffer list
 call denite#custom#var('buffer', 'date_format', '')
 
+" Change sorters.
+call denite#custom#source(
+\ 'file/rec', 'sorters', ['sorter/sublime'])
+
 " Custom options for Denite
 "   auto_resize             - Auto resize the Denite window height automatically.
 "   prompt                  - Customize denite prompt
