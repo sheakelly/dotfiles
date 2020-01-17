@@ -11,5 +11,5 @@ mv $HOME/.config/nvim $BACKUP_DIR 2>/dev/null
 
 echo "Linking dotfiles"
 ln -s $INSTALL_DIR/.zshrc $HOME/.zshrc
-ln -s $INSTALL_DIR/.tmux.config $HOME/.tmux.config
+ln -s $INSTALL_DIR/.tmux.conf $HOME/.tmux.conf
 ln -s $INSTALL_DIR/.config/nvim $HOME/.config/nvim
