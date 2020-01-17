@@ -14,5 +14,6 @@ https://github.com/ctaylo21/jarvis
 
 ## Manual
 
-Set keyboard speed to fasted settings
-Map 'caps-lock' to 'esc' key
+- Set keyboard speed to fasted settings
+- Map 'caps-lock' to 'esc' key
+- Install https://github.com/arcticicestudio/nord-iterm2
