@@ -103,6 +103,13 @@ fgr() {
   fi
 }
 
+# git add, commit and push in one
+gacp() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
+
 # Enabled zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -129,12 +136,5 @@ SPACESHIP_GIT_STATUS_STASHED=''
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/slss.zsh
+# A place to to store api key and such
+source $HOME/.secrets
