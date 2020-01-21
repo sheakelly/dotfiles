@@ -88,7 +88,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-Plug 'zxqfl/tabnine-vim'
+" Plug 'zxqfl/tabnine-vim'
 
 " Initialize plugin system
 call plug#end()

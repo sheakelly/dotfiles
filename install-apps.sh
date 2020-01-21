@@ -43,6 +43,7 @@ brew cask install google-chrome-canary
 brew cask install spotify
 brew cask install slack
 brew cask install mtmr
+brew cask install azure-data-studio
 brew install p7zip
 
 # Install oh-my-zsh
