@@ -5,6 +5,7 @@ call plug#begin('~/.nvim/plugged')
 
 " Plug 'rakr/vim-one'
 Plug 'arcticicestudio/nord-vim'
+"Plug 'fenetikm/falcon'
 
 Plug 'vim-airline/vim-airline' 
 
@@ -15,12 +16,14 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'fannheyward/telescope-coc.nvim'
 
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'ryanoasis/vim-devicons'
 
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
+Plug 'kevinhwang91/rnvimr'
 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -125,6 +128,9 @@ set shortmess+=c
 :command Q q
 
 
+:nnoremap <C-n> :bnext<CR>
+:nnoremap <C-p> :bprevious<CR>
+
 " =====================================================
 " Colors and theme config
 syntax on
@@ -134,6 +140,8 @@ set termguicolors
 set background=dark
 
 colorscheme nord
+
+let g:airline_theme = 'nord'
 
 " =====================================================
 " NERDTree config
@@ -156,7 +164,7 @@ endfunction
 " Highlight currently open buffer in NERDTree
 autocmd BufEnter * call SyncTree()
 
-nmap <C-n> :NERDTreeToggle<CR>
+nmap <leader>n :NERDTreeToggle<CR>
 
 " =====================================================
 " Telescope config
@@ -164,6 +172,10 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+lua << EOF
+require('telescope').load_extension('coc')
+EOF
 
 " =====================================================
 " coc.vim config
@@ -252,7 +264,7 @@ xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>aa  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
 
@@ -313,3 +325,6 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" Ranger config
+nmap <leader>r :RnvimrToggle<CR>
