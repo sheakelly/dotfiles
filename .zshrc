@@ -27,7 +27,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git node brew tmux)
+plugins=(git node brew tmux lwb)
 
 # User configuration
 # Hide user@hostname if it's expected default user
@@ -138,3 +138,22 @@ source $(brew --prefix nvm)/nvm.sh
 
 # A place to to store api key and such
 source $HOME/.secrets
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/sheakelly/code/lwb/cloudfront/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/sheakelly/code/lwb/cloudfront/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/sheakelly/code/lwb/cloudfront/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/sheakelly/code/lwb/cloudfront/node_modules/tabtab/.completions/sls.zsh
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/sheakelly/code/lwb/www-lwb-org-au/node_modules/tabtab/.completions/slss.zsh
+
+eval "$(pyenv init -)"
+
+export LWB_USER='shea.kelly@lwb.org.au'
+export AWS_DEFAULT_PROFILE='lwb'
+export AWS_PROFILE='lwb'
+
+[ -f "/Users/sheakelly/.ghcup/env" ] && source "/Users/sheakelly/.ghcup/env" # ghcup-env
